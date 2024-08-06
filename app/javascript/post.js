@@ -3,7 +3,7 @@ function post (){
   form.addEventListener("submit", (e) => {
     const formData = new FormData(document.getElementById("form"));
     const XHR = new XMLHttpRequest();
-    XHR.open("POST", "/articles", true);
+    XHR.open("POST", "/posts", true);
     XHR.responseType = "json";
     XHR.send(formData);
     e.preventDefault();
